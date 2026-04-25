@@ -31,6 +31,16 @@
 			path = SwiftAI;
 			sourceTree = "<group>";
 		};
+		D91A10002FA00000009D638F /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D91A10012FA00000009D638F /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		C76E46512F9D2FCF009D638F /* SwiftAITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SwiftAITests;
@@ -60,6 +70,8 @@
 		C76E46382F9D2FCF009D638F = {
 			isa = PBXGroup;
 			children = (
+				D91A10002FA00000009D638F /* Sources */,
+				D91A10012FA00000009D638F /* Tests */,
 				C76E46442F9D2FCF009D638F /* SwiftAI */,
 				C76E46512F9D2FCF009D638F /* SwiftAITests */,
 				C76E46432F9D2FCF009D638F /* Products */,
@@ -102,6 +114,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				D91A10002FA00000009D638F /* Sources */,
 				C76E46442F9D2FCF009D638F /* SwiftAI */,
 			);
 			name = SwiftAI;
@@ -125,6 +138,7 @@
 				C76E46502F9D2FCF009D638F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				D91A10012FA00000009D638F /* Tests */,
 				C76E46512F9D2FCF009D638F /* SwiftAITests */,
 			);
 			name = SwiftAITests;
