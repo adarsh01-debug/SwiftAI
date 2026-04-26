@@ -49,7 +49,10 @@ public struct OpenAIProvider: AIProvider {
                     let events = SSEParser.parse(lines: lines)
                     for try await event in events {
                         if event.data == "[DONE]" { break }
-                        let parsed = try decodeStreamEvent(event.data)
+                        if event.data.isEmpty { continue }
+                        // The Responses API emits many event types; skip any
+                        // whose shape doesn't match our model rather than throwing.
+                        guard let parsed = try? decodeStreamEvent(event.data) else { continue }
                         if let streamEvent = mapStreamEvent(parsed) {
                             continuation.yield(streamEvent)
                         }
