@@ -68,7 +68,7 @@ public struct OpenAIProvider: AIProvider {
         }
         let allMessages = request.transcript + request.messages
         let input = allMessages.map { message in
-            OpenAIInputMessage(role: message.role.rawValue, content: message.parts.map(mapPart))
+            OpenAIInputMessage(role: message.role.rawValue, content: message.parts.map { mapPart($0, role: message.role) })
         }
         return OpenAIResponseRequest(
             model: configuration.model,
@@ -80,10 +80,13 @@ public struct OpenAIProvider: AIProvider {
         )
     }
 
-    private func mapPart(_ part: AIContentPart) -> OpenAIInputContent {
+    private func mapPart(_ part: AIContentPart, role: AIRole) -> OpenAIInputContent {
         switch part {
         case .text(let text):
-            return .init(type: "input_text", text: text, imageURL: nil)
+            // OpenAI Responses API requires "output_text" for assistant turns,
+            // and "input_text" for user/system turns.
+            let type = role == .assistant ? "output_text" : "input_text"
+            return .init(type: type, text: text, imageURL: nil)
         case .imageData(let base64, let mimeType):
             return .init(type: "input_image", text: nil, imageURL: "data:\(mimeType);base64,\(base64)")
         case .imageURL(let url):
