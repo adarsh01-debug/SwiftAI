@@ -99,10 +99,7 @@ public struct OpenAIProvider: AIProvider {
     }
 
     private func endpointURL(_ path: String) throws -> URL {
-        guard let url = URL(string: path, relativeTo: configuration.baseURL)?.absoluteURL else {
-            throw AIError.invalidConfiguration("Invalid base URL")
-        }
-        return url
+        return configuration.baseURL.appendingPathComponent(path)
     }
 
     private func decodeResponse(_ data: Data) throws -> OpenAIResponseBody {
