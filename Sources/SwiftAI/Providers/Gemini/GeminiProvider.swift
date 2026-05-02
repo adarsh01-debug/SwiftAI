@@ -123,8 +123,7 @@ public struct GeminiProvider: AIProvider {
         let action = streaming ? "streamGenerateContent" : "generateContent"
         let base = configuration.baseURL
             .appendingPathComponent("models")
-            .appendingPathComponent(configuration.model)
-            .appendingPathComponent(action)
+            .appendingPathComponent("\(configuration.model):\(action)")
         var components = URLComponents(url: base, resolvingAgainstBaseURL: false)!
         var queryItems = [URLQueryItem(name: "key", value: configuration.apiKey)]
         if streaming {
