@@ -116,7 +116,10 @@ public struct GeminiProvider: AIProvider {
     }
 
     private func defaultHeaders() -> [String: String] {
-        ["Content-Type": "application/json"]
+        [
+            "Content-Type": "application/json",
+            "x-goog-api-key": configuration.apiKey
+        ]
     }
 
     private func endpointURL(streaming: Bool) throws -> URL {
@@ -125,11 +128,11 @@ public struct GeminiProvider: AIProvider {
             .appendingPathComponent("models")
             .appendingPathComponent("\(configuration.model):\(action)")
         var components = URLComponents(url: base, resolvingAgainstBaseURL: false)!
-        var queryItems = [URLQueryItem(name: "key", value: configuration.apiKey)]
+        var queryItems: [URLQueryItem] = []
         if streaming {
             queryItems.append(URLQueryItem(name: "alt", value: "sse"))
         }
-        components.queryItems = queryItems
+        components.queryItems = queryItems.isEmpty ? nil : queryItems
         guard let url = components.url else {
             throw AIError.invalidConfiguration("Could not construct Gemini endpoint URL")
         }

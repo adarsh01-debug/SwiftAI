@@ -61,6 +61,8 @@ public struct URLSessionHTTPClient: HTTPClient {
                 headers: headers,
                 body: data
             )
+        } catch let error as AIError {
+            throw error
         } catch {
             throw AIError.transport(error.localizedDescription)
         }
