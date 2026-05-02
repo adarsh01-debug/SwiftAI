@@ -49,6 +49,8 @@ public struct AIConfiguration: Sendable, Equatable {
             return URL(string: "https://api.openai.com/v1")!
         case .anthropic:
             return URL(string: "https://api.anthropic.com/v1")!
+        case .gemini:
+            return URL(string: "https://generativelanguage.googleapis.com/v1beta")!
         }
     }
 }

@@ -11,6 +11,8 @@ public struct SwiftAIClient: Sendable {
             self.provider = OpenAIProvider(configuration: configuration, httpClient: httpClient)
         case .anthropic:
             self.provider = AnthropicProvider(configuration: configuration, httpClient: httpClient)
+        case .gemini:
+            self.provider = GeminiProvider(configuration: configuration, httpClient: httpClient)
         }
     }
 
