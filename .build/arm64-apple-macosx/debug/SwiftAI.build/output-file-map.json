@@ -14,12 +14,6 @@
     "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIError~partial.swiftmodule",
     "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIError.swiftdeps"
   },
-  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift": {
-    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.d",
-    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swift.o",
-    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels~partial.swiftmodule",
-    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swiftdeps"
-  },
   "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift": {
     "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.d",
     "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.swift.o",
@@ -32,17 +26,131 @@
     "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders~partial.swiftmodule",
     "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swiftdeps"
   },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderKind.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderKind.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderKind.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderKind~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderKind.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderRawPayload.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderRawPayload.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderRawPayload.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderRawPayload~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderRawPayload.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderResponse.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderResponse.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderResponse.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderResponse~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderResponse.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRequest.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIResponse.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRole.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRole.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRole.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRole~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRole.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIStreamEvent.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIStreamEvent.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIStreamEvent.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIStreamEvent~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIStreamEvent.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIUsage.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIUsage.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIUsage.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIUsage~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIUsage.swiftdeps"
+  },
   "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift": {
     "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.d",
     "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.swift.o",
     "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider~partial.swiftmodule",
     "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.swiftdeps"
   },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicRequestDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicRequestDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicRequestDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicRequestDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicRequestDTOs.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicResponseDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicResponseDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicResponseDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicResponseDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicResponseDTOs.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicStreamDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicStreamDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicStreamDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicStreamDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicStreamDTOs.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiRequestDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiRequestDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiRequestDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiRequestDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiRequestDTOs.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiResponseDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiResponseDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiResponseDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiResponseDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiResponseDTOs.swiftdeps"
+  },
   "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift": {
     "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.d",
     "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swift.o",
     "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider~partial.swiftmodule",
     "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIRequestDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIRequestDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIRequestDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIRequestDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIRequestDTOs.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIResponseDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIResponseDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIResponseDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIResponseDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIResponseDTOs.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIStreamDTOs.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIStreamDTOs.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIStreamDTOs.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIStreamDTOs~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIStreamDTOs.swiftdeps"
   },
   "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift": {
     "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIProvider.d",

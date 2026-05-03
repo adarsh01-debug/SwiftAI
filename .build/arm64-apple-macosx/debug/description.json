@@ -36,10 +36,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift"
         },
         {
@@ -48,11 +44,87 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderKind.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderRawPayload.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderResponse.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRequest.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIResponse.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRole.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIStreamEvent.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIUsage.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift"
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicRequestDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicResponseDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicStreamDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiRequestDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiResponseDTOs.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIRequestDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIResponseDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIStreamDTOs.swift"
         },
         {
           "kind" : "file",
@@ -85,11 +157,29 @@
       "objects" : [
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIConfiguration.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIError.swift.o",
-        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderKind.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderRawPayload.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderResponse.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRole.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIStreamEvent.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIUsage.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicRequestDTOs.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicResponseDTOs.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicStreamDTOs.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiRequestDTOs.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiResponseDTOs.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIRequestDTOs.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIResponseDTOs.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIStreamDTOs.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIProvider.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SSEParser.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SwiftAIClient.swift.o",
@@ -143,10 +233,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swift.o"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.swift.o"
         },
         {
@@ -155,11 +241,87 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderKind.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderRawPayload.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderResponse.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRole.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIStreamEvent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIUsage.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.swift.o"
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicRequestDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicResponseDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicStreamDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiRequestDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiResponseDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIRequestDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIResponseDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIStreamDTOs.swift.o"
         },
         {
           "kind" : "file",
@@ -186,11 +348,29 @@
       "sources" : [
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIConfiguration.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift",
-        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderKind.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderRawPayload.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderResponse.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRequest.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIResponse.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRole.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIStreamEvent.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIUsage.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicRequestDTOs.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicResponseDTOs.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicStreamDTOs.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiRequestDTOs.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiResponseDTOs.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIRequestDTOs.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIResponseDTOs.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIStreamDTOs.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Streaming/SSEParser.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/SwiftAIClient.swift",
@@ -377,11 +557,29 @@
       "-c",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIConfiguration.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift",
-      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderKind.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderRawPayload.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderResponse.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRequest.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIResponse.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRole.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIStreamEvent.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIUsage.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicRequestDTOs.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicResponseDTOs.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicStreamDTOs.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiRequestDTOs.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiResponseDTOs.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIRequestDTOs.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIResponseDTOs.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIStreamDTOs.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Streaming/SSEParser.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/SwiftAIClient.swift",
@@ -570,10 +768,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift"
         },
         {
@@ -582,11 +776,87 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderKind.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderRawPayload.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIProviderResponse.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRequest.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIResponse.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIRole.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIStreamEvent.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIUsage.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift"
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicRequestDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicResponseDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicStreamDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiRequestDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiResponseDTOs.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIRequestDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIResponseDTOs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIStreamDTOs.swift"
         },
         {
           "kind" : "file",
@@ -630,7 +900,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart.swift.o"
         },
         {
           "kind" : "file",
@@ -638,7 +916,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swift.o"
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage.swift.o"
         },
         {
           "kind" : "file",
@@ -646,7 +924,39 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderKind.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderRawPayload.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProviderResponse.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRole.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIStreamEvent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIUsage.swift.o"
         },
         {
           "kind" : "file",
@@ -654,7 +964,27 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicRequestDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicResponseDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicStreamDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiRequestDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiResponseDTOs.swift.o"
         },
         {
           "kind" : "file",
@@ -663,6 +993,18 @@
         {
           "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIRequestDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIResponseDTOs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIStreamDTOs.swift.o"
         },
         {
           "kind" : "file",
