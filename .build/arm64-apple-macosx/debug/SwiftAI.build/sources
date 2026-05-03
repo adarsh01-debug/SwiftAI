@@ -19,6 +19,7 @@
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/DTOs/AnthropicStreamDTOs.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiRequestDTOs.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiResponseDTOs.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/DTOs/GeminiStreamDTOs.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIRequestDTOs.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/DTOs/OpenAIResponseDTOs.swift
