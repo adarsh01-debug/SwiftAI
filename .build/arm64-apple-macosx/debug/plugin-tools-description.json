@@ -1,0 +1,715 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.xctest/Contents/MacOS/SwiftAIPackageTests",
+      "packagePath" : "/Users/adarsh/Documents/SwiftAI",
+      "productName" : "SwiftAIPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SwiftAI-arm64-apple-macosx16.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/sources",
+      "importPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Streaming/SSEParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/SwiftAIClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Transport/HTTPClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftAI",
+      "moduleOutputPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAI.swiftmodule",
+      "objects" : [
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIConfiguration.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIError.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIProvider.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SSEParser.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SwiftAIClient.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/HTTPClient.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SwiftAI-Swift.h",
+        "-swift-version",
+        "5",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftai"
+      ],
+      "outputFileMapPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SSEParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SwiftAIClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/HTTPClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIConfiguration.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Streaming/SSEParser.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/SwiftAIClient.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Transport/HTTPClient.swift"
+      ],
+      "tempsPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftAIPackageTests-arm64-apple-macosx16.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/sources",
+      "importPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAITests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftAIPackageTests",
+      "moduleOutputPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAIPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/SwiftAIPackageTests-Swift.h",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftai"
+      ],
+      "outputFileMapPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAIPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftAITests-arm64-apple-macosx16.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/sources",
+      "importPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Tests/SwiftAITests/SwiftAITests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftAITests",
+      "moduleOutputPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAITests.swiftmodule",
+      "objects" : [
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/SwiftAITests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftai"
+      ],
+      "outputFileMapPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/SwiftAITests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules/SwiftAITests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/adarsh/Documents/SwiftAI/Tests/SwiftAITests/SwiftAITests.swift"
+      ],
+      "tempsPath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SwiftAI" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SwiftAI",
+      "-package-name",
+      "swiftai",
+      "-incremental",
+      "-c",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIConfiguration.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Streaming/SSEParser.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/SwiftAIClient.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Transport/HTTPClient.swift",
+      "-I",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SwiftAI-Swift.h",
+      "-swift-version",
+      "5",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftai",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "SwiftAIPackageTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SwiftAIPackageTests",
+      "-package-name",
+      "swiftai",
+      "-incremental",
+      "-c",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/SwiftAIPackageTests-Swift.h",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftai",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "SwiftAITests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SwiftAITests",
+      "-package-name",
+      "swiftai",
+      "-incremental",
+      "-c",
+      "/Users/adarsh/Documents/SwiftAI/Tests/SwiftAITests/SwiftAITests.swift",
+      "-I",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftai",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SwiftAI" : [
+
+    ],
+    "SwiftAIPackageTests" : [
+      "SwiftAITests",
+      "SwiftAI"
+    ],
+    "SwiftAITests" : [
+      "SwiftAI"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Streaming/SSEParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/SwiftAIClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Transport/HTTPClient.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/sources"
+    },
+    "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/sources"
+    },
+    "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIModels.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AnthropicProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/GeminiProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/HTTPClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/OpenAIProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SSEParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SwiftAIClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/SwiftAITests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Tests/SwiftAITests/SwiftAITests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/sources"
+    },
+    "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

@@ -29,7 +29,10 @@ public struct GeminiProvider: AIProvider {
             throw AIError.httpStatus(response.statusCode, String(data: response.body, encoding: .utf8))
         }
         let decoded = try decodeResponse(response.body)
-        return normalized(response: decoded)
+        return try normalized(
+            response: decoded,
+            rawPayload: .init(statusCode: response.statusCode, headers: response.headers, body: response.body)
+        ).asAIResponse()
     }
 
     public func stream(_ request: AIRequest) -> AsyncThrowingStream<AIStreamEvent, Error> {
@@ -49,11 +52,13 @@ public struct GeminiProvider: AIProvider {
                     let events = SSEParser.parse(lines: lines)
                     var assembledText = ""
                     var lastResponse: GeminiResponse?
+                    var lastRawPayload: AIProviderRawPayload?
                     var startedEmitted = false
                     for try await event in events {
                         if event.data == "[DONE]" { break }
                         if event.data.isEmpty { continue }
                         guard let chunk = try? decodeResponse(event.data) else { continue }
+                        lastRawPayload = AIProviderRawPayload(body: event.data.data(using: .utf8))
                         if !startedEmitted {
                             continuation.yield(.started(id: nil))
                             startedEmitted = true
@@ -65,7 +70,11 @@ public struct GeminiProvider: AIProvider {
                         lastResponse = chunk
                     }
                     if let final = lastResponse {
-                        continuation.yield(.completed(normalized(response: final, fallbackText: assembledText)))
+                        continuation.yield(.completed(try normalized(
+                            response: final,
+                            fallbackText: assembledText,
+                            rawPayload: lastRawPayload
+                        ).asAIResponse()))
                     }
                     continuation.finish()
                 } catch {
@@ -154,12 +163,16 @@ public struct GeminiProvider: AIProvider {
         return try decodeResponse(data)
     }
 
-    private func normalized(response: GeminiResponse, fallbackText: String = "") -> AIResponse {
+    private func normalized(
+        response: GeminiResponse,
+        fallbackText: String = "",
+        rawPayload: AIProviderRawPayload? = nil
+    ) throws -> AIProviderResponse {
         let candidate = response.candidates?.first
         let parts = candidate?.content?.parts ?? []
         let text = parts.compactMap(\.text).joined()
-        let output = text.isEmpty ? fallbackText : text
-        return AIResponse(
+        let output = fallbackText.isEmpty ? text : fallbackText
+        return try AIProviderResponse(
             id: UUID().uuidString,
             model: response.modelVersion ?? configuration.model,
             message: AIMessage(role: .assistant, parts: [.text(output)]),
@@ -169,7 +182,8 @@ public struct GeminiProvider: AIProvider {
                 totalTokens: response.usageMetadata?.totalTokenCount
             ),
             finishReason: candidate?.finishReason,
-            provider: .gemini
+            provider: .gemini,
+            rawPayload: rawPayload
         )
     }
 }

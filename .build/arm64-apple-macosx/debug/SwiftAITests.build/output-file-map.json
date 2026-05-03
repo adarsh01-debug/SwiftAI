@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/master.swiftdeps"
+  },
+  "/Users/adarsh/Documents/SwiftAI/Tests/SwiftAITests/SwiftAITests.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/SwiftAITests.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/SwiftAITests.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/SwiftAITests~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAITests.build/SwiftAITests.swiftdeps"
+  }
+}

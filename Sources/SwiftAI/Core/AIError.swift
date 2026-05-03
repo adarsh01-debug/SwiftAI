@@ -7,6 +7,7 @@ public enum AIError: Error, Sendable, LocalizedError, Equatable {
     case transport(String)
     case httpStatus(Int, String?)
     case decoding(String)
+    case invalidResponse(String)
     case streamProtocol(String)
     case unknown(String)
 
@@ -18,6 +19,7 @@ public enum AIError: Error, Sendable, LocalizedError, Equatable {
         case .transport(let msg): return "Transport error: \(msg)"
         case .httpStatus(let status, let body): return "HTTP error \(status): \(body ?? "No body")"
         case .decoding(let msg): return "Decoding error: \(msg)"
+        case .invalidResponse(let msg): return "Invalid response: \(msg)"
         case .streamProtocol(let msg): return "Stream protocol error: \(msg)"
         case .unknown(let msg): return "Unknown error: \(msg)"
         }

@@ -29,7 +29,10 @@ public struct OpenAIProvider: AIProvider {
             throw AIError.httpStatus(response.statusCode, String(data: response.body, encoding: .utf8))
         }
         let decoded = try decodeResponse(response.body)
-        return normalized(response: decoded)
+        return try normalized(
+            response: decoded,
+            rawPayload: .init(statusCode: response.statusCode, headers: response.headers, body: response.body)
+        ).asAIResponse()
     }
 
     public func stream(_ request: AIRequest) -> AsyncThrowingStream<AIStreamEvent, Error> {
@@ -53,7 +56,8 @@ public struct OpenAIProvider: AIProvider {
                         // The Responses API emits many event types; skip any
                         // whose shape doesn't match our model rather than throwing.
                         guard let parsed = try? decodeStreamEvent(event.data) else { continue }
-                        if let streamEvent = mapStreamEvent(parsed) {
+                        let rawPayload = AIProviderRawPayload(body: event.data.data(using: .utf8))
+                        if let streamEvent = try mapStreamEvent(parsed, rawPayload: rawPayload) {
                             continuation.yield(streamEvent)
                         }
                     }
@@ -127,7 +131,7 @@ public struct OpenAIProvider: AIProvider {
         }
     }
 
-    private func mapStreamEvent(_ event: OpenAIStreamEvent) -> AIStreamEvent? {
+    private func mapStreamEvent(_ event: OpenAIStreamEvent, rawPayload: AIProviderRawPayload?) throws -> AIStreamEvent? {
         if event.type == "response.created" {
             return .started(id: event.response?.id)
         }
@@ -135,7 +139,7 @@ public struct OpenAIProvider: AIProvider {
             return .textDelta(delta)
         }
         if event.type == "response.completed", let response = event.response {
-            return .completed(normalized(response: response))
+            return try .completed(normalized(response: response, rawPayload: rawPayload).asAIResponse())
         }
         if event.type == "error" {
             return .failed(event.error?.message ?? "Unknown stream error")
@@ -143,9 +147,9 @@ public struct OpenAIProvider: AIProvider {
         return nil
     }
 
-    private func normalized(response: OpenAIResponseBody) -> AIResponse {
+    private func normalized(response: OpenAIResponseBody, rawPayload: AIProviderRawPayload? = nil) throws -> AIProviderResponse {
         let text = response.outputText ?? ""
-        return AIResponse(
+        return try AIProviderResponse(
             id: response.id ?? UUID().uuidString,
             model: response.model ?? configuration.model,
             message: AIMessage(role: .assistant, parts: [.text(text)]),
@@ -155,7 +159,8 @@ public struct OpenAIProvider: AIProvider {
                 totalTokens: response.usage?.totalTokens
             ),
             finishReason: response.status,
-            provider: .openAI
+            provider: .openAI,
+            rawPayload: rawPayload
         )
     }
 }

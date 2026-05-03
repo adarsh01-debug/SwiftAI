@@ -79,6 +79,7 @@ public struct AIResponse: Sendable, Codable, Equatable {
     public let usage: AIUsage?
     public let finishReason: String?
     public let provider: AIProviderKind
+    public let providerResponse: AIProviderResponse?
 
     public init(
         id: String,
@@ -86,7 +87,8 @@ public struct AIResponse: Sendable, Codable, Equatable {
         message: AIMessage,
         usage: AIUsage? = nil,
         finishReason: String? = nil,
-        provider: AIProviderKind
+        provider: AIProviderKind,
+        providerResponse: AIProviderResponse? = nil
     ) {
         self.id = id
         self.model = model
@@ -94,6 +96,115 @@ public struct AIResponse: Sendable, Codable, Equatable {
         self.usage = usage
         self.finishReason = finishReason
         self.provider = provider
+        self.providerResponse = providerResponse
+    }
+
+    public init(providerResponse: AIProviderResponse) {
+        self.init(
+            id: providerResponse.id,
+            model: providerResponse.model,
+            message: providerResponse.message,
+            usage: providerResponse.usage,
+            finishReason: providerResponse.finishReason,
+            provider: providerResponse.provider,
+            providerResponse: providerResponse
+        )
+    }
+}
+
+public struct AIProviderRawPayload: Sendable, Codable, Equatable {
+    public let statusCode: Int?
+    public let headers: [String: String]
+    public let body: Data?
+
+    public var bodyString: String? {
+        guard let body else { return nil }
+        return String(data: body, encoding: .utf8)
+    }
+
+    public init(statusCode: Int? = nil, headers: [String: String] = [:], body: Data? = nil) {
+        self.statusCode = statusCode
+        self.headers = headers
+        self.body = body
+    }
+}
+
+public struct AIProviderResponse: Sendable, Codable, Equatable {
+    public let id: String
+    public let model: String
+    public let message: AIMessage
+    public let usage: AIUsage?
+    public let finishReason: String?
+    public let provider: AIProviderKind
+    public let rawPayload: AIProviderRawPayload?
+
+    public var text: String {
+        message.parts.compactMap { part in
+            if case .text(let value) = part { return value }
+            return nil
+        }.joined()
+    }
+
+    public init(
+        id: String,
+        model: String,
+        message: AIMessage,
+        usage: AIUsage? = nil,
+        finishReason: String? = nil,
+        provider: AIProviderKind,
+        rawPayload: AIProviderRawPayload? = nil
+    ) throws {
+        guard !id.isEmpty else {
+            throw AIError.invalidResponse("Provider response is missing an id")
+        }
+        guard !model.isEmpty else {
+            throw AIError.invalidResponse("Provider response is missing a model")
+        }
+        guard message.role == .assistant else {
+            throw AIError.invalidResponse("Provider response must normalize to an assistant message")
+        }
+        let text = message.parts.compactMap { part in
+            if case .text(let value) = part { return value.trimmingCharacters(in: .whitespacesAndNewlines) }
+            return nil
+        }.joined()
+        guard !text.isEmpty else {
+            throw AIError.invalidResponse("Provider response did not include displayable text")
+        }
+
+        self.id = id
+        self.model = model
+        self.message = message
+        self.usage = usage
+        self.finishReason = finishReason
+        self.provider = provider
+        self.rawPayload = rawPayload
+    }
+
+    public func asAIResponse() -> AIResponse {
+        AIResponse(providerResponse: self)
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case model
+        case message
+        case usage
+        case finishReason
+        case provider
+        case rawPayload
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        try self.init(
+            id: container.decode(String.self, forKey: .id),
+            model: container.decode(String.self, forKey: .model),
+            message: container.decode(AIMessage.self, forKey: .message),
+            usage: container.decodeIfPresent(AIUsage.self, forKey: .usage),
+            finishReason: container.decodeIfPresent(String.self, forKey: .finishReason),
+            provider: container.decode(AIProviderKind.self, forKey: .provider),
+            rawPayload: container.decodeIfPresent(AIProviderRawPayload.self, forKey: .rawPayload)
+        )
     }
 }
 

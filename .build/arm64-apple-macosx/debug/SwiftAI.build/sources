@@ -1,0 +1,11 @@
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIConfiguration.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIModels.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Anthropic/AnthropicProvider.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/Gemini/GeminiProvider.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Providers/OpenAI/OpenAIProvider.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Streaming/SSEParser.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/SwiftAIClient.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Transport/HTTPClient.swift
