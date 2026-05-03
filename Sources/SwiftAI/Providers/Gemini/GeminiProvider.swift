@@ -51,27 +51,26 @@ public struct GeminiProvider: AIProvider {
                     let lines = httpClient.streamLines(httpRequest)
                     let events = SSEParser.parse(lines: lines)
                     var assembledText = ""
-                    var lastResponse: GeminiResponse?
+                    var lastChunk: GeminiStreamChunk?
                     var lastRawPayload: AIProviderRawPayload?
                     var startedEmitted = false
                     for try await event in events {
                         if event.data == "[DONE]" { break }
                         if event.data.isEmpty { continue }
-                        guard let chunk = try? decodeResponse(event.data) else { continue }
+                        guard let chunk = try? decodeStreamChunk(event.data) else { continue }
                         lastRawPayload = AIProviderRawPayload(body: event.data.data(using: .utf8))
                         if !startedEmitted {
                             continuation.yield(.started(id: nil))
                             startedEmitted = true
                         }
-                        if let text = chunk.candidates?.first?.content?.parts.first?.text, !text.isEmpty {
-                            assembledText += text
-                            continuation.yield(.textDelta(text))
+                        if let mapped = mapStreamChunk(chunk, assembledText: &assembledText) {
+                            continuation.yield(mapped)
                         }
-                        lastResponse = chunk
+                        lastChunk = chunk
                     }
-                    if let final = lastResponse {
-                        continuation.yield(.completed(try normalized(
-                            response: final,
+                    if let final = lastChunk {
+                        continuation.yield(.completed(try normalizedFromChunk(
+                            final,
                             fallbackText: assembledText,
                             rawPayload: lastRawPayload
                         ).asAIResponse()))
@@ -156,11 +155,47 @@ public struct GeminiProvider: AIProvider {
         }
     }
 
-    private func decodeResponse(_ text: String) throws -> GeminiResponse {
+    private func decodeStreamChunk(_ text: String) throws -> GeminiStreamChunk {
         guard let data = text.data(using: .utf8) else {
             throw AIError.streamProtocol("Invalid UTF-8 stream payload")
         }
-        return try decodeResponse(data)
+        do {
+            return try decoder.decode(GeminiStreamChunk.self, from: data)
+        } catch {
+            throw AIError.decoding(error.localizedDescription)
+        }
+    }
+
+    private func mapStreamChunk(_ chunk: GeminiStreamChunk, assembledText: inout String) -> AIStreamEvent? {
+        guard let text = chunk.candidates?.first?.content?.parts.first?.text, !text.isEmpty else {
+            return nil
+        }
+        assembledText += text
+        return .textDelta(text)
+    }
+
+    private func normalizedFromChunk(
+        _ chunk: GeminiStreamChunk,
+        fallbackText: String = "",
+        rawPayload: AIProviderRawPayload? = nil
+    ) throws -> AIProviderResponse {
+        let candidate = chunk.candidates?.first
+        let parts = candidate?.content?.parts ?? []
+        let text = parts.compactMap(\.text).joined()
+        let output = fallbackText.isEmpty ? text : fallbackText
+        return try AIProviderResponse(
+            id: UUID().uuidString,
+            model: chunk.modelVersion ?? configuration.model,
+            message: AIMessage(role: .assistant, parts: [.text(output)]),
+            usage: AIUsage(
+                inputTokens: chunk.usageMetadata?.promptTokenCount,
+                outputTokens: chunk.usageMetadata?.candidatesTokenCount,
+                totalTokens: chunk.usageMetadata?.totalTokenCount
+            ),
+            finishReason: candidate?.finishReason,
+            provider: .gemini,
+            rawPayload: rawPayload
+        )
     }
 
     private func normalized(
