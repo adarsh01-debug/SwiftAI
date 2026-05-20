@@ -2,6 +2,7 @@
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift
+/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIResponseType.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift
 /Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift

@@ -4,16 +4,32 @@ struct OpenAIResponseBody: Decodable {
     let id: String?
     let model: String?
     let status: String?
-    let outputText: String?
+    let output: [OpenAIOutputItem]?
     let usage: OpenAIUsage?
 
-    enum CodingKeys: String, CodingKey {
-        case id
-        case model
-        case status
-        case outputText = "output_text"
-        case usage
+    var outputText: String? {
+        let joined = output?
+            .flatMap { $0.content ?? [] }
+            .filter { $0.type == "output_text" }
+            .compactMap { $0.text }
+            .joined() ?? ""
+        return joined.isEmpty ? nil : joined
     }
+
+    enum CodingKeys: String, CodingKey {
+        case id, model, status, output, usage
+    }
+}
+
+struct OpenAIOutputItem: Decodable {
+    let type: String?
+    let role: String?
+    let content: [OpenAIOutputContent]?
+}
+
+struct OpenAIOutputContent: Decodable {
+    let type: String?
+    let text: String?
 }
 
 struct OpenAIUsage: Decodable {
@@ -22,8 +38,8 @@ struct OpenAIUsage: Decodable {
     let totalTokens: Int?
 
     enum CodingKeys: String, CodingKey {
-        case inputTokens = "input_tokens"
+        case inputTokens  = "input_tokens"
         case outputTokens = "output_tokens"
-        case totalTokens = "total_tokens"
+        case totalTokens  = "total_tokens"
     }
 }

@@ -44,6 +44,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIResponseType.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift"
         },
         {
@@ -163,6 +167,7 @@
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIError.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIProvider.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swift.o",
+        "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponseType.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIContentPart.swift.o",
         "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIMessage.swift.o",
@@ -243,6 +248,10 @@
         {
           "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponseType.swift.o"
         },
         {
           "kind" : "file",
@@ -359,6 +368,7 @@
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift",
+        "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIResponseType.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift",
         "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift",
@@ -569,6 +579,7 @@
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIError.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIProvider.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIRequest+Builders.swift",
+      "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIResponseType.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIContentPart.swift",
       "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AIMessage.swift",
@@ -787,6 +798,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIResponseType.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift"
         },
         {
@@ -960,6 +975,10 @@
         {
           "kind" : "file",
           "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponse.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponseType.swift.o"
         },
         {
           "kind" : "file",

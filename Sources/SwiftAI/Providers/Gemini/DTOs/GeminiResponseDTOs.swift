@@ -16,3 +16,13 @@ struct GeminiUsageMetadata: Decodable {
     let candidatesTokenCount: Int?
     let totalTokenCount: Int?
 }
+
+struct GeminiErrorWrapper: Decodable {
+    let error: GeminiErrorDetail
+}
+
+struct GeminiErrorDetail: Decodable {
+    let code: Int
+    let message: String
+    let status: String?
+}

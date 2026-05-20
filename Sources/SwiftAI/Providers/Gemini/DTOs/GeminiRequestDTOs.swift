@@ -9,6 +9,17 @@ struct GeminiRequest: Encodable {
 struct GeminiContent: Codable {
     let role: String
     let parts: [GeminiPart]
+
+    init(role: String, parts: [GeminiPart]) {
+        self.role = role
+        self.parts = parts
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.role = (try? container.decode(String.self, forKey: .role)) ?? "model"
+        self.parts = (try? container.decode([GeminiPart].self, forKey: .parts)) ?? []
+    }
 }
 
 struct GeminiSystemInstruction: Encodable {
@@ -18,10 +29,12 @@ struct GeminiSystemInstruction: Encodable {
 struct GeminiPart: Codable {
     let text: String?
     let inlineData: GeminiInlineData?
+    let thought: Bool?
 
     enum CodingKeys: String, CodingKey {
         case text
         case inlineData = "inline_data"
+        case thought
     }
 }
 

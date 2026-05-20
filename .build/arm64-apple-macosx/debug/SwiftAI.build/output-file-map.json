@@ -26,6 +26,12 @@
     "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders~partial.swiftmodule",
     "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIRequest+Builders.swiftdeps"
   },
+  "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/AIResponseType.swift": {
+    "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponseType.d",
+    "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponseType.swift.o",
+    "swiftmodule": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponseType~partial.swiftmodule",
+    "swift-dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AIResponseType.swiftdeps"
+  },
   "/Users/adarsh/Documents/SwiftAI/Sources/SwiftAI/Core/Models/AICapabilities.swift": {
     "dependencies": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.d",
     "object": "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/AICapabilities.swift.o",

@@ -57,16 +57,36 @@ public struct GeminiProvider: AIProvider {
                     for try await event in events {
                         if event.data == "[DONE]" { break }
                         if event.data.isEmpty { continue }
-                        guard let chunk = try? decodeStreamChunk(event.data) else { continue }
-                        lastRawPayload = AIProviderRawPayload(body: event.data.data(using: .utf8))
-                        if !startedEmitted {
-                            continuation.yield(.started(id: nil))
-                            startedEmitted = true
+                        // Gemini 2.5 sends multiple JSON objects separated by "\n" in a single SSE event.
+                        // Decode each line independently instead of treating the joined string as one JSON.
+                        let jsonLines = event.data
+                            .components(separatedBy: "\n")
+                            .map { $0.trimmingCharacters(in: .whitespaces) }
+                            .filter { !$0.isEmpty }
+                        for jsonLine in jsonLines {
+                            do {
+                                let chunk = try decodeStreamChunk(jsonLine)
+                                lastRawPayload = AIProviderRawPayload(body: jsonLine.data(using: .utf8))
+                                if !startedEmitted {
+                                    continuation.yield(.started(id: nil))
+                                    startedEmitted = true
+                                }
+                                if let mapped = mapStreamChunk(chunk, assembledText: &assembledText) {
+                                    continuation.yield(mapped)
+                                }
+                                lastChunk = chunk
+                            } catch {
+                                if let data = jsonLine.data(using: .utf8) {
+                                    if let wrapper = try? decoder.decode(GeminiErrorWrapper.self, from: data) {
+                                        throw AIError.invalidResponse(wrapper.error.message)
+                                    }
+                                    if let wrappers = try? decoder.decode([GeminiErrorWrapper].self, from: data),
+                                       let first = wrappers.first {
+                                        throw AIError.invalidResponse(first.error.message)
+                                    }
+                                }
+                            }
                         }
-                        if let mapped = mapStreamChunk(chunk, assembledText: &assembledText) {
-                            continuation.yield(mapped)
-                        }
-                        lastChunk = chunk
                     }
                     if let final = lastChunk {
                         continuation.yield(.completed(try normalizedFromChunk(
@@ -74,6 +94,8 @@ public struct GeminiProvider: AIProvider {
                             fallbackText: assembledText,
                             rawPayload: lastRawPayload
                         ).asAIResponse()))
+                    } else {
+                        throw AIError.invalidResponse("No content received from Gemini")
                     }
                     continuation.finish()
                 } catch {
@@ -97,7 +119,7 @@ public struct GeminiProvider: AIProvider {
         }
 
         let systemInstruction: GeminiSystemInstruction? = request.personalityPrompt.map {
-            GeminiSystemInstruction(parts: [GeminiPart(text: $0, inlineData: nil)])
+            GeminiSystemInstruction(parts: [GeminiPart(text: $0, inlineData: nil, thought: nil)])
         }
 
         let generationConfig = GeminiGenerationConfig(
@@ -115,11 +137,11 @@ public struct GeminiProvider: AIProvider {
     private func mapPart(_ part: AIContentPart) -> GeminiPart {
         switch part {
         case .text(let value):
-            return GeminiPart(text: value, inlineData: nil)
+            return GeminiPart(text: value, inlineData: nil, thought: nil)
         case .imageData(let base64, let mimeType):
-            return GeminiPart(text: nil, inlineData: GeminiInlineData(mimeType: mimeType, data: base64))
+            return GeminiPart(text: nil, inlineData: GeminiInlineData(mimeType: mimeType, data: base64), thought: nil)
         case .imageURL(let url):
-            return GeminiPart(text: url, inlineData: nil)
+            return GeminiPart(text: url, inlineData: nil, thought: nil)
         }
     }
 
@@ -159,17 +181,13 @@ public struct GeminiProvider: AIProvider {
         guard let data = text.data(using: .utf8) else {
             throw AIError.streamProtocol("Invalid UTF-8 stream payload")
         }
-        do {
-            return try decoder.decode(GeminiStreamChunk.self, from: data)
-        } catch {
-            throw AIError.decoding(error.localizedDescription)
-        }
+        return try decoder.decode(GeminiStreamChunk.self, from: data)
     }
 
     private func mapStreamChunk(_ chunk: GeminiStreamChunk, assembledText: inout String) -> AIStreamEvent? {
-        guard let text = chunk.candidates?.first?.content?.parts.first?.text, !text.isEmpty else {
-            return nil
-        }
+        let parts = chunk.candidates?.first?.content?.parts ?? []
+        let text = parts.filter { $0.thought != true }.compactMap(\.text).joined()
+        guard !text.isEmpty else { return nil }
         assembledText += text
         return .textDelta(text)
     }
