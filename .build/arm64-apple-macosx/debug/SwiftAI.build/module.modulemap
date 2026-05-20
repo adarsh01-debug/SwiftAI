@@ -1,4 +1,0 @@
-module SwiftAI {
-    header "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAI.build/SwiftAI-Swift.h"
-    requires objc
-}

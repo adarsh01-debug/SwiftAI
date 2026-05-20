@@ -1,4 +1,0 @@
-module SwiftAIPackageTests {
-    header "/Users/adarsh/Documents/SwiftAI/.build/arm64-apple-macosx/debug/SwiftAIPackageTests.build/SwiftAIPackageTests-Swift.h"
-    requires objc
-}
